@@ -50,7 +50,7 @@ function geraTabuada(){
 			for(let i = 0; i<=10;i++){
 				//document.write(`${valor_digitado.value} x ${i} = ${valor_digitado.value*i} `)
 				let linha_tabuada = document.createElement('span')
-				linha_tabuada.innerHTML =`${valor_digitado.value} / ${i} = ${valor_digitado.value*i}`;
+				linha_tabuada.innerHTML =`${valor_digitado.value} / ${i} = ${(valor_digitado.value / i).toFixed(2)}`;
 				linha_tabuada.className = 'linha_tabuada';
 				divisao.append(linha_tabuada) 
 			}
