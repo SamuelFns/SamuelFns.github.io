@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head lang="pt-br">
+	<title>Matemática-Calculadora</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/estilos_gerais.css">
+	<link rel="stylesheet" type="text/css" href="../css/cabecalho.css">
+	<link rel="stylesheet" type="text/css" href="../css/estilos_containers.css">
+	<link rel="stylesheet" type="text/css" href="../css/rodape.css">
+	<link rel="stylesheet" type="text/css" href="../css/calculadora.css">
+</head>
+<body>
+	<!--Área desitnada ao cabeçalho-->
+	<header id="cabecalho">
+		<div id="area_logo">
+			<img src="../imagens/logo.png" alt="logo">
+			<span>Matemática em sua essência</span>
+		</div>
+		<div id="hamburguer">
+			<div id="alinhaHamburguer"><hr><hr><hr></div>
+		</div>
+		<!--Área do menu horizontal-->
+		<nav id="menu_horizontal">
+			<ul>
+				<li><a href="../index.html">HOME</a></li>
+				<li><a href="calculadora.html">CALCULADORA</a></li>
+				<li id="contas_basicas"><a href="">CONTAS BÁSICAS</a>
+					<ul id="contas_basicas_dropdown">
+						<li><a href="soma.html">ADIÇÃO</a></li>
+						<li><a href="subtracao.html">SUBTRAÇÃO</a></li>
+						<li><a href="multiplicacao.html">MULTIPLICAÇÃO</a></li>
+						<li><a href="divisao.html">DIVISÃO</a></li>		
+					</ul>
+				</li>
+				<li><a href="materias.html">MATÉRIAS</a></li>
+				<li><a href="tabuada.html">TABUADA</a></li>
+			</ul>
+		</nav>
+	</header>
+		<!--Área do menu vertical-->
+		<nav id="menu_vertical">
+			<ul id="menu_vertical_itens">
+				<li><a href="../index.html">HOME</a></li>
+				<li><a href="calculadora.html">CALCULADORA</a></li>
+				<li><a href="soma.html">ADIÇÃO</a></li>
+				<li><a href="subtracao.html">SUBTRAÇÃO</a></li>
+				<li><a href="multiplicacao.html">MULTIPLICAÇÃO</a></li>
+				<li><a href="divisao.html">DIVISÃO</a></li>
+				<li><a href="materias.html">MATÉRIAS</a></li>
+				<li><a href="tabuada.html">TABUADA</a></li>
+			</ul>
+		</nav>
+
+		<!--Área de conteúdos-->
+		<div id="container_monitor">
+			<div id="alinha_conteudos">
+				<h1>Calculadora</h1>
+				
+				<p>Para usar a calculadora, basta clicar no número que deseja digitar e depois o tipo de conta que deseja fazer</p>
+				<p>Após digitar tudo, apenas clique no botão de igual e o resultado será mostrado no visor</p>
+
+				<div id="container_calculadora">
+					<div id="resultado_container">
+						<input type="text" name="resultado" id="resultado" disabled="disabled" placeholder="0">
+					</div>
+					
+					<div id="area_botoes">
+						<button type="button " value="1" onclick="calcular('valor',1)">1</button>
+						<button type="button " value="2" onclick="calcular('valor',2)">2</button>
+						<button type="button " value="3" onclick="calcular('valor',3)">3</button>
+						<button type="button " value="4" onclick="calcular('valor',4)">4</button>
+						<button type="button " value="5" onclick="calcular('valor',5)">5</button>
+						<button type="button " value="6" onclick="calcular('valor',6)">6</button>
+						<button type="button " value="7" onclick="calcular('valor',7)">7</button>
+						<button type="button " value="8" onclick="calcular('valor',8)">8</button>
+						<button type="button " value="9" onclick="calcular('valor',9)">9</button>
+						<button type="button " value="0" onclick="calcular('valor',0)">0</button>
+
+						<button type="button " value="+" onclick="calcular('acao','+')">+</button>
+						<button type="button " value="-" onclick="calcular('acao','-')">-</button>
+						<button type="button " value="/" onclick="calcular('acao','/')">/</button>
+						<button type="button " value="*" onclick="calcular('acao','*')">*</button>
+						<button type="button " value="*" onclick="calcular('acao','.')">.</button>
+						<button type="button " value="*" onclick="calcular('acao','c')">c</button>
+
+						<button type="button " value="=" onclick="calcular('acao','=')" id="igual">=</button>
+
+					</div>
+				</div>
+
+				<script type="text/javascript" src="../js/calculadora.js"></script>
+
+
+			</div>
+				
+		</div>
+
+
+
+		<!--Área do rodapé-->
+		
+	
+			<footer>
+				<p>Todos os direitos reservados</p>
+				<p>Descarte o seu lixo eletrônico de forma correta, use as lixeiras apropriadas para aparelhos eletrônicos</p>
+			</footer>
+		
+
+
+
+		<script type="text/javascript" src="../js/controle_menu.js"></script>
+		<script type="text/javascript" src="../js/calculadora.js"></script>
+</body>
+</html>

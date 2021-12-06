@@ -1,0 +1,72 @@
+
+#tabuada{
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+}
+.linha_tabuada{
+	text-align: center;
+	margin:0 auto;
+	font-size: 20px;
+	padding: 5px;
+	display: block;
+}
+#divisao{
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	display: inline-block;
+	width: 200px;
+	margin: 20px;
+	border:1px solid #001;
+	border-radius: 20px;
+}
+#multiplicacao{
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	display: inline-block;
+	width: 200px;
+	margin: 20px;
+	border:1px solid #001;
+	border-radius: 20px;
+}
+#campo_digitacao{
+	text-align: center;
+	margin: 0 auto;
+	width: 80%;
+}
+#campo_digitacao button{
+	padding: 5px;
+	background-color: #304E70;
+}
+#campo_digitacao button:hover{
+	background:#5183BD ;
+	color: #304E70;
+	cursor: pointer;
+}
+#valor{
+	padding: 5px;
+}
+
+
+@media (max-width: 768px){
+	#campo_digitacao button{
+		padding: 5px;
+		background-color: #304E70;
+		display: block;
+		margin: 0 auto;
+		margin-top: 10px;
+	}
+	#divisao{
+		display: block;
+		width: 200px;
+		border:1px solid #001;
+		margin: 0 auto;
+	}
+	#multiplicacao{
+		display: block;
+		width: 200px;
+		border:1px solid #001;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}	
+}

@@ -1,0 +1,194 @@
+/*estilizações do cabeçalho*/
+header{
+	width: 100%;
+	background: #37597F;
+}
+#area_logo{
+	width: 200px;
+	text-align: center;
+	margin: 0 auto;
+}
+#area_logo img{
+	width: 40%;
+	display: block;
+	margin:0 auto;
+}
+#area_logo span{
+	font-size: 15px;
+}
+/*estilizando o menu vertical e o hamburguer menu*/
+#hamburguer{
+	display: none;
+}
+#hamburguer:hover{
+	background:#304E70 ;
+	cursor: pointer;
+
+}
+#hamburguer:hover hr{
+	color: #304E70;
+	background:#304E70;
+}
+#menu_vertical{
+	display: none;
+	width: 200px;
+	background: white;
+	position: absolute;
+}
+/*estilizando o menu horizontal*/
+#menu_horizontal{
+	width: 100%;
+	text-align: center;
+}
+#menu_horizontal ul{
+	list-style: none;
+	width: 100%;
+}
+#menu_horizontal ul li{
+	display: inline-block;
+	padding: 5px;
+}
+#menu_horizontal ul li a{
+	text-decoration: none;
+	color: #B1CFF2;
+	padding: 5px;
+}
+#menu_horizontal ul li a:hover{
+	background: #B1CFF2;
+	color: #37597F;
+	cursor: pointer;
+}
+#contas_basicas_dropdown{
+	display: none;
+	position: absolute;
+	left: 0px;
+	top: 115px;
+	background: #5183BD;
+	width: 30%;
+}
+#contas_basicas:hover #contas_basicas_dropdown{
+	display: block;	
+}
+#contas_basicas_dropdown ul li{
+	display: inline;
+	position: relative;
+	width: 100px;
+}
+/*Serve para arrumar um bug que ocorre ao redimensonar com o menu vertical aberto*/
+@media (min-width: 768px){
+	#menu_vertical_itens{
+		display: none;
+	}
+}
+/*estilizando em larguras de tela de dispositivos mobile*/
+@media (max-width:768px){
+	#area_logo{
+		position: relative;
+		left: auto;
+		right: auto;
+		top:20px;
+	}
+	#hamburguer{
+		display: block;
+		width: 50px;
+		height: 50px;
+		background: #5183BD;
+	}
+	#alinhaHamburguer{
+		position: relative;
+		top: 10px;
+	}
+	#hamburguer hr{
+		width: 80%;
+		margin:10px auto;
+		color: #526070;
+		background: #526070;
+	}
+	#menu_horizontal{
+		display: none;
+	}
+	#menu_vertical{
+		display: none;
+		width: 200px;
+		height: 80%;
+		background: #5183BD;
+		z-index: 1;
+	}
+	#menu_vertical ul{
+		list-style: none;
+		width: 200px;
+	}
+	#menu_vertical li{
+		padding: 5px;
+		width: 200px; 
+	}
+	#menu_vertical li a{
+		display: block;
+		padding: 5px;
+		width: 85%;
+		color:#37597A;
+		text-decoration: none;
+	}
+	#menu_vertical li a:hover{
+		background: #37597F;
+		color: #B1CFF2;
+
+	}
+}
+/*estilização para dispositivos de tela grande*/
+@media (min-width: 1500px){
+	#area_logo{
+		width: 300px;
+		text-align: center;
+		border:1px solid red;
+		margin: 0 auto;
+	}
+	#area_logo img{
+		width: 40%;
+		display: block;
+		margin:0 auto;
+	}
+	#area_logo span{
+		font-size: 25px;
+	}
+	#menu_horizontal{
+		width: 100%;
+		text-align: center;
+		font-size: 30px;
+	}
+	#menu_horizontal ul{
+		list-style: none;
+		width: 100%;
+	}
+	#menu_horizontal ul li{
+		display: inline-block;
+		padding: 10px;
+	}
+	#menu_horizontal ul li a{
+		text-decoration: none;
+		color: #B1CFF2;
+		padding: 10px;
+	}
+	#menu_horizontal ul li a:hover{
+		background: #B1CFF2;
+		color: #37597F;
+		cursor: pointer;
+	}
+	#contas_basicas_dropdown{
+		display: none;
+		position: absolute;
+		left: 0px;
+		top: 215px;
+		background: #5183BD;
+		width: 30%;
+	}
+	#contas_basicas:hover #contas_basicas_dropdown{
+		display: block;	
+	}
+	#contas_basicas_dropdown ul li{
+		display: inline;
+		position: relative;
+		width: 100px;
+	}
+
+}

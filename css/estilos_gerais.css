@@ -1,0 +1,11 @@
+/*esses estilos servem para ajustar alguns estilos que são pré-definidos*/
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Lato;
+}
+body{
+	position: relative;
+}
+
+

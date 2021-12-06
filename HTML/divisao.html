@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head lang="pt-br">
+	<title>Matemática-Divisão</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/estilos_gerais.css">
+	<link rel="stylesheet" type="text/css" href="../css/cabecalho.css">
+	<link rel="stylesheet" type="text/css" href="../css/estilos_containers.css">
+	<link rel="stylesheet" type="text/css" href="../css/rodape.css">
+</head>
+<body>
+	<!--Área desitnada ao cabeçalho-->
+	<header id="cabecalho">
+		<div id="area_logo">
+			<img src="../imagens/logo.png" alt="logo">
+			<span>Matemática em sua essência</span>
+		</div>
+		<div id="hamburguer">
+			<div id="alinhaHamburguer"><hr><hr><hr></div>
+		</div>
+		<!--Área do menu horizontal-->
+		<nav id="menu_horizontal">
+			<ul>
+				<li><a href="../index.html">HOME</a></li>
+				<li><a href="calculadora.html">CALCULADORA</a></li>
+				<li id="contas_basicas"><a href="">CONTAS BÁSICAS</a>
+					<ul id="contas_basicas_dropdown">
+						<li><a href="soma.html">ADIÇÃO</a></li>
+						<li><a href="subtracao.html">SUBTRAÇÃO</a></li>
+						<li><a href="multiplicacao.html">MULTIPLICAÇÃO</a></li>
+						<li><a href="divisao.html">DIVISÃO</a></li>		
+					</ul>
+				</li>
+				<li><a href="materias.html">MATÉRIAS</a></li>
+				<li><a href="tabuada.html">TABUADA</a></li>
+			</ul>
+		</nav>
+	</header>
+		<!--Área do menu vertical-->
+		<nav id="menu_vertical">
+			<ul id="menu_vertical_itens">
+				<li><a href="../index.html">HOME</a></li>
+				<li><a href="calculadora.html">CALCULADORA</a></li>
+				<li><a href="soma.html">ADIÇÃO</a></li>
+				<li><a href="subtracao.html">SUBTRAÇÃO</a></li>
+				<li><a href="multiplicacao.html">MULTIPLICAÇÃO</a></li>
+				<li><a href="divisao.html">DIVISÃO</a></li>
+				<li><a href="materias.html">MATÉRIAS</a></li>
+				<li><a href="tabuada.html">TABUADA</a></li>
+			</ul>
+		</nav>
+
+		<!--Área de conteúdos-->
+		<div id="container_monitor">
+			<div id="alinha_conteudos">
+				<h1>Divisão</h1>
+				<div class="area_imagem"><img src="../imagens/divisao.png"></div>
+				<p>A divisão faz parte das 4 operações básicas da matemática, sendo o inverso da multiplicação. Consiste no fracionamento de um número, podendo ser inteiro ou decimal</p>
+				<p>Representamos a divisão usando o símbolo ":" ou "/" </p>
+				<p>p:d = q, onde p é o dividendo, d é o disivor e q é o quociente. Devemos buscar um número q, que ao ser multiplicado por d, resulte em p</p>
+				<p>Quando a divisão não é exata, ou seja, não é possível encotrar o valor de q, então a multiplicação de q por d fica um valor muito próximo de p,chamamos a diferença de p pela multiplicação de d por q, de resto, ou r</p>
+				<p>Exemplo: 10:2 = 5, pois 5 x 2 = 10<br>11:2 ≠  2, pois 5 x 2 = 10, 11 - 10 = 1, ou seja, a divisào de 11 por 2, gera resto igual a 1</p>
+				<p>Quando o resto for igual a 0, dizemos que o número p é divisível por d, caso o contrário, p não é divisível por d</p>
+				<p>p = d.q+r</p>
+
+				<h2>Como realizar a divisão</h2>
+				<p>Organize a conta da seguinte forma</p>
+				<img src="../imagens/base_divisap.png" >
+				<p>Vamos fazer a conta 30:2</p>
+				<img src="../imagens/divisao1.png">
+				<p>Devemos achar um número que multiplicado por 2 resultará em 30. para facilitar a conta, vamos pelo número mais próximo do divisor, dentro do dividendo, nesse caso, o 3, então, agora, devemos achar o número que multiplicado por 2 reusltará em 3 ou um número próximo a 3, nesse caso, 2x1=2 é o mais próximo de 3, então:</p>
+				<img src="../imagens/divisao2.png">
+				<p>Agora, deve-se prosseguir, descendo o próximo algarismo,caso ele não baste, desça o próximo, acrescentando um 0 ao quociente</p>
+				<img src="../imagens/divisao3.png">
+				<p>O processo termina quando o resto é igual a 0</p>
+				<h2>Regra de sinais</h2>
+				<p>+ x +  = +| - x - = +| + x - = -| - x +  = -</p>
+				<p>Exemplos: 5 :(-5) = -1, -10 : (-2) = 5, 20 : 2 = 10</p>
+				<h2>Divisão com vírgula</h2>
+				<p>Quando o quociente não for inteiro, isso é, quando o resto não for igual a zero, deve se acrescentar um 0 no resto e colocar uma virgula no quociente, dai é só prosseguir com a divisão</p>
+				<p>Quando o dividendo e o divisor não forem números inteiros, deve se andar com a vírgula para a direita até que se tornem inteiros. Caso um se torne inteiro e o outro ainda esteja decimal, deve-se continuar andando com a vírgula, e adicionar no que já está inteiro, tantos 0 quanto o número de casas que se andou com a vírgula. Exemplo: 0,5:0,02->50:2 = 25</p>
+
+			</div>
+				
+		</div>
+
+
+
+		<!--Área do rodapé-->
+		<footer>
+			<p>Todos os direitos reservados</p>
+			<p>Descarte o seu lixo eletrônico de forma correta, use as lixeiras apropriadas para aparelhos eletrônicos</p>
+		</footer>
+
+
+
+		<script type="text/javascript" src="../js/controle_menu.js"></script>
+
+</body>
+</html>
