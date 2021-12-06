@@ -46,7 +46,12 @@
 #valor{
 	padding: 5px;
 }
-
+#alinha_conteudos #tabuada #titulo_multiplicacao{
+	margin: 10px;
+}
+#alinha_conteudos #tabuada #titulo_divisao{
+	margin: 10px;
+}
 
 @media (max-width: 768px){
 	#campo_digitacao button{
