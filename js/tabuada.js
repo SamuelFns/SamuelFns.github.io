@@ -13,6 +13,7 @@ function geraTabuada(){
 		
 		let container = document.getElementById('tabuada')//variável que pega o campo que deverá conter a tabuada
 		let titulo = document.createElement('h2');//Titulo da tabuada
+		titulo.setAttribute('id','titulo');
 		
 		let multiplicacao = document.createElement('div')//cria uma div para a tabuada de multiplicação do número
 		multiplicacao.setAttribute('id','multiplicacao')//settando um valor de id para o campo de multiplicação
@@ -21,8 +22,10 @@ function geraTabuada(){
 		divisao.setAttribute('id','divisao')//settando um valor de id para o campo de divisão
 
 		let divisao_titulo = document.createElement('h2');
+		divisao_titulo.setAttribute('id','titulo_divisao')
 		divisao_titulo.innerHTML = 'Divisão';
 		let multiplicacao_titulo = document.createElement('h2');
+		multiplicacao_titulo.setAttribute('id','titulo_multiplicacao')
 		multiplicacao_titulo.innerHTML = 'Multiplicação' 
 
 		//Verificando se o valor digitado não é vazio, nulo ou não é um número
@@ -56,6 +59,16 @@ function geraTabuada(){
 	
 
 }
+	//essa função serve para apagar todas as tabuadas geradas
+	function apagarTabuada(){
+		//seleciona os ids das tabuadas e apaga seus conteudos
+		document.getElementById('titulo').remove();
+		document.getElementById('multiplicacao').remove();
+		document.getElementById('divisao').remove();
+		document.getElementById('titulo_multiplicacao').remove();
+		document.getElementById('titulo_divisao').remove();
+	}
+	
 	window.addEventListener('reload',function(){
 			valor_digitado.value = '';
 			valor_digitado.placeholder = 'Digite um número';
