@@ -43,6 +43,9 @@
 	color: #304E70;
 	cursor: pointer;
 }
+#area_botoes{
+	display: inline-block;
+}
 #valor{
 	padding: 5px;
 }
@@ -74,4 +77,10 @@
 		margin: 0 auto;
 		margin-bottom: 20px;
 	}	
+	#area_bototes{
+		display: block;
+	}
+	#area_botoes button{
+		display: inline-block;
+	}
 }
